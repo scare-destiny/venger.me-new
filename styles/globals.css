@@ -15,9 +15,9 @@
 
   --primary-glow: conic-gradient(
     from 180deg at 100% 50%,
-    #16abff33 0deg,
-    #0885ff33 55deg,
-    #54d6ff33 120deg,
+    #ff69b433 0deg,
+    #ff69b433 55deg,
+    #ff69b433 120deg,
     #0071ff33 160deg,
     transparent 360deg
   );
