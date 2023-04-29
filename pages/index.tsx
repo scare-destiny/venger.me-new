@@ -50,9 +50,7 @@ export default function Home() {
 				<FadeInSection>
 					<Services />
 				</FadeInSection>
-				<FadeInSection>
-					<Testimonials />
-				</FadeInSection>
+				<Testimonials />
 				<Footer />
 
 				{/* <div className={styles.center}>
