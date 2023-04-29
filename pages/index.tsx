@@ -3,7 +3,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { Silkscreen } from 'next/font/google'
 import styles from '@/styles/Home.module.css'
-import { Hero } from '@/components'
+import { Hero, Services, Footer } from '@/components'
 
 const silkscreen = Silkscreen({ subsets: ['latin'], weight: '400' })
 
@@ -19,7 +19,7 @@ export default function Home() {
 			<main className={styles.main}>
 				<div className={styles.description}>
 					<p className='text-center font-sans '>
-						Empowering Businesses with a Unique Blend of Marketing and Development
+						Elevate Your Business with Cutting-Edge Marketing & Development Solutions
 					</p>
 					<div>
 						<Link href='/'>
@@ -36,6 +36,8 @@ export default function Home() {
 					</div>
 				</div>
 				<Hero />
+				<Services />
+				<Footer />
 
 				{/* <div className={styles.center}>
 					<Image

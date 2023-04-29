@@ -13,7 +13,7 @@ module.exports = {
 	theme: {
 		extend: {
 			fontFamily: {
-				sans: ['var(--font-silkscreen)', ...fontFamily.mono],
+				mono: ['var(--font-silkscreen)', ...fontFamily.mono],
 			},
 		},
 	},
