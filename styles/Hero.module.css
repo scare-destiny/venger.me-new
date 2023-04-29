@@ -1,0 +1,44 @@
+
+.rainbow {
+	background-image: -webkit-linear-gradient(0deg,var(--orange10),var(--yellow10),var(--green10) 56%,var(--blue10) 56.1%,var(--pink10),var(--red10));
+	background-clip: text;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	padding-left: 3px;
+	padding-right: 3px;
+	margin-left: -3px;
+	margin-right: -3px;
+	line-height: 2.75rem;
+}
+
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.center::before {
+  background: var(--secondary-glow);
+  border-radius: 0%;
+  width: 280px;
+  height: 160px;
+  margin-left: -400px;
+}
+
+.center::after {
+  background: var(--primary-glow);
+  width: 540px;
+  height: 280px;
+  z-index: -1;
+}
+
+.center::before,
+.center::after {
+  content: '';
+  left: 50%;
+  position: absolute;
+  filter: blur(35px);
+  transform: translateZ(0);
+}
