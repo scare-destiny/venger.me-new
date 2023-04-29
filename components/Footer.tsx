@@ -22,7 +22,7 @@ const Footer = () => {
 					</NextLink>
 				</div> */}
 
-				<p className='mx-auto mt-6 max-w-md text-center leading-relaxed text-gray-500 font-serif'>
+				<p className='mx-auto mt-6 max-w-md text-center font-serif  leading-relaxed text-gray-500 '>
 					As a growth marketer turned software developer, I specialize in helping
 					businesses reach new heights by combining automation, software development,
 					and marketing expertise.

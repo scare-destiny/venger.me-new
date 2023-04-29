@@ -3,7 +3,13 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { Silkscreen } from 'next/font/google'
 import styles from '@/styles/Home.module.css'
-import { Hero, Services, Footer, Testimonials } from '@/components'
+import {
+	Hero,
+	Services,
+	Footer,
+	Testimonials,
+	FadeInSection,
+} from '@/components'
 
 const silkscreen = Silkscreen({ subsets: ['latin'], weight: '400' })
 
@@ -38,9 +44,15 @@ export default function Home() {
 						</Link>
 					</div>
 				</div>
-				<Hero />
-				<Services />
-				<Testimonials />
+				<FadeInSection>
+					<Hero />
+				</FadeInSection>
+				<FadeInSection>
+					<Services />
+				</FadeInSection>
+				<FadeInSection>
+					<Testimonials />
+				</FadeInSection>
 				<Footer />
 
 				{/* <div className={styles.center}>
