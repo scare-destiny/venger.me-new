@@ -17,7 +17,7 @@ module.exports = {
 			},
 			backgroundImage: (theme) => ({
 				'testimonial-gradient':
-					'linear-gradient(to right, rgba(var(--tile-start-rgb)), rgba(var(--tile-end-rgb)))',
+					'linear-gradient(to right, var(--pink10), var(--blue10))',
 			}),
 			boxShadow: {
 				'testimonial-hover': '0 12px 24px rgba(0, 0, 0, 0.1)',

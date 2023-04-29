@@ -46,9 +46,9 @@
   --orange10:hsl(24, 100%, 46%);
   --yellow10:hsl(50, 100%, 48%);
   --green10:hsl(152, 57.5%, 36%);
-  --blue10:   hsl(208, 100%, 47%);
-  --pink10:hsl(322, 63%, 50%);
-  --red10:   hsl(358, 69%, 60%);
+  --blue10:   hsl(208, 30%, 77%);
+  --pink10 :hsl(322, 33%, 70%);
+  --red10:   hsl(358, 39%, 60%);
 }
 
 @media (prefers-color-scheme: dark) {
