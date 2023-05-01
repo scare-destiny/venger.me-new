@@ -9,6 +9,7 @@ import {
 	Footer,
 	Testimonials,
 	FadeInSection,
+	ContactForm,
 } from '@/components'
 
 const silkscreen = Silkscreen({ subsets: ['latin'], weight: '400' })
@@ -51,6 +52,10 @@ export default function Home() {
 					<Services />
 				</FadeInSection>
 				<Testimonials />
+				<FadeInSection>
+					<ContactForm />
+				</FadeInSection>
+
 				<Footer />
 
 				{/* <div className={styles.center}>
