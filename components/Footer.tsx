@@ -1,6 +1,7 @@
 import logo from '../public/Logo-JvG-Saddle-Innovations-gross_klein.webp'
 import NextLink from 'next/link'
 import Image from 'next/image'
+import Logo from '@/data/logo'
 import { useRouter } from 'next/router'
 
 const Footer = () => {
@@ -10,7 +11,9 @@ const Footer = () => {
 		<footer aria-label='Site Footer'>
 			<div className='mx-auto max-w-5xl  py-16 '>
 				<div className='flex justify-center text-teal-600'>
-					{/* <Image src={logo} alt='westernsattel logo' /> */}
+					<div className='w-24 md:hidden'>
+						<Logo />
+					</div>
 				</div>
 				{/* <div className='mt-6 flex justify-center'>
 					<NextLink
