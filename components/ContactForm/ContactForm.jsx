@@ -21,20 +21,20 @@ Let&apos;s Work Together
 				</div>
 				<form className="flex-1 rounded-2xl flex flex-col gap-y-6 pb-20 p-6 border  border-pink-300">
 						<div>
-						<input value={name} onChange={(e) => setName(e.target.value)}  type="text" name="name" className="w-full px-2 bg-transparent border-b border-pink-300 py-3 outline-none placeholder:text-gray-600 dark:placeholder:text-white focus:border-pink-400 transition-all duration-300" placeholder="Your name" autoComplete="name"/>
+						<input required value={name} onChange={(e) => setName(e.target.value)}  type="text" name="name" className="w-full px-2 bg-transparent border-b border-pink-300 py-3 outline-none placeholder:text-gray-600 dark:placeholder:text-white focus:border-pink-400 transition-all duration-300" placeholder="Your name" autoComplete="name"/>
 						</div>
 						<div>
-						<input value={email} onChange={(e) => setEmail(e.target.value)} type="text" name="email" className="w-full px-2 bg-transparent border-b border-pink-300 py-3 outline-none placeholder:text-gray-600 dark:placeholder:text-white focus:border-pink-400 transition-all duration-300" placeholder="Your email" autoComplete="email"/>
+						<input required value={email} onChange={(e) => setEmail(e.target.value)} type="text" name="email" className="w-full px-2 bg-transparent border-b border-pink-300 py-3 outline-none placeholder:text-gray-600 dark:placeholder:text-white focus:border-pink-400 transition-all duration-300" placeholder="Your email" autoComplete="email"/>
 						</div>
 						<div>
-						<textarea value={message} onChange={(e) => setMessage(e.target.value)} name="message" className="w-full px-2 bg-transparent border-b border-pink-300 py-8 outline-none placeholder:text-gray-600 dark:placeholder:text-white transition-all focus:border-pink-400 duration-300 resize-none" placeholder="Your Message"></textarea>
+						<textarea required value={message} onChange={(e) => setMessage(e.target.value)} name="message" className="w-full px-2 bg-transparent border-b border-pink-300 py-8 outline-none placeholder:text-gray-600 dark:placeholder:text-white transition-all focus:border-pink-400 duration-300 resize-none" placeholder="Your Message"></textarea>
 						</div>
 						<div>
-						<input value={terms} onChange={(e) => setTerms(!terms)} className="mr-2" type="checkbox" id="accept_terms" name="accept_terms"/>
-						<label className="font-medium" htmlFor="accept_terms">I understand and agree to the Privacy Policy.</label>
+						<input required value={terms} onChange={(e) => setTerms(!terms)} className="mr-2" type="checkbox" id="accept_terms" name="accept_terms"/>
+						<label className="font-light" htmlFor="accept_terms">I understand and agree to the Privacy Policy.</label>
 						</div>
 						<div className="flex flex-col lg:flex-row justify-between items-center gap-8">
-<button className="  text-center font-extralight text-xl w-[9em] h-[2em] rounded-full before:rounded-full  shadow-2xl shadow-pink-900 uppercase">
+<button className="  text-center font-extralight text-xl w-[9em] h-[2em] rounded-full before:rounded-full  shadow-2xl shadow-pink-900 uppercase hover:scale-105">
 Send Message
 </button>
 						</div>
