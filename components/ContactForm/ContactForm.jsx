@@ -6,9 +6,42 @@ export default function ContactForm() {
 	const [email, setEmail] = useState("")
 	const [message, setMessage] = useState("")
 	const [terms, setTerms] = useState(false)
+
+	const handleSubmit = async (e) => {
+    e.preventDefault()
+    const formData = {
+      name,
+      email,
+      message,
+    }
+
+    try {
+      const response = await fetch(
+        "https://script.google.com/macros/s/AKfycbyZ3mI_r2KyIGe8OJ7QSjOLxbNxJqkyY3oWUZ9bdJ4AHMb4sUMIuw-irFJiKjIeV6uvdA/exec",
+        {
+          method: "POST",
+          body: JSON.stringify(formData),
+          headers: {
+            "Content-Type": "application/json",
+          },
+        }
+      )
+
+			response.ok ? alert('Your message has been sent!') : alert('Error occurred while submitting your message.')
+
+    } catch (error) {
+      alert("Failed to submit your message. Please try again later.")
+    }
+
+    setName("")
+    setEmail("")
+    setMessage("")
+    setTerms(false)
+  }
 	
 
-	return <section className="pt-16  md:ml-8">
+	return (
+	<section className="pt-16  md:ml-8">
 		<div className="container mx-auto">
       <div className="flex flex-col lg:flex-row  dark:text-white">
 				<div className="md:flex-1 md:flex-col md:flex items-center md:items-start md:justify-center">
@@ -19,7 +52,7 @@ Get In Touch
 Let&apos;s Work Together 
 						</h2>
 				</div>
-				<form className="flex-1 rounded-2xl flex flex-col gap-y-6 pb-20 p-6 border  border-pink-300">
+				<form onSubmit={handleSubmit} className="flex-1 rounded-2xl flex flex-col gap-y-6 pb-20 p-6 border  border-pink-300">
 						<div>
 						<input required value={name} onChange={(e) => setName(e.target.value)}  type="text" name="name" className="w-full px-2 bg-transparent border-b border-pink-300 py-3 outline-none placeholder:text-gray-600 dark:placeholder:text-white focus:border-pink-400 transition-all duration-300" placeholder="Your name" autoComplete="name"/>
 						</div>
@@ -42,4 +75,5 @@ Let&apos;s Work Together
 			</div>
 		</div>
 	</section>
+	)
 }

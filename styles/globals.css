@@ -120,6 +120,35 @@ a {
 	-webkit-text-fill-color: transparent;
 }
 
+.typewriter-effect {
+  white-space: nowrap;
+  overflow: hidden;
+  width: 0;
+  animation: type 3s steps(22) 1s forwards infinite, blink 0.5s steps(1) infinite;
+}
+
+
+@keyframes type {
+  to {
+    width: 22ch;
+  }
+}
+
+@keyframes blink {
+  0%,
+  100% {
+    border-color: transparent;
+  }
+
+  50% {
+    border-color: #000;
+  }
+}
+
+
+
+
+
 @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;

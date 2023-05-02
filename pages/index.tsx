@@ -15,6 +15,12 @@ import {
 
 const silkscreen = Silkscreen({ subsets: ['latin'], weight: '400' })
 
+const prompts = [
+	'Welcome to our website!',
+	'Check out our services!',
+	'Get in touch with us!',
+]
+
 export default function Home() {
 	return (
 		<>
@@ -32,7 +38,7 @@ export default function Home() {
 					<p className='text-center font-sans '>
 						Elevate Your Business with Cutting-Edge Marketing & Development Solutions
 					</p>
-					<div className='w-24'>
+					<div className='w-36'>
 						<Link href='/'>
 							<Logo />{' '}
 							{/* <Image

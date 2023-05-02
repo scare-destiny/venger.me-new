@@ -11,9 +11,7 @@ const Footer = () => {
 		<footer aria-label='Site Footer'>
 			<div className='mx-auto max-w-5xl  py-16 '>
 				<div className='flex justify-center text-teal-600'>
-					<div className='w-24 md:hidden'>
-						<Logo />
-					</div>
+					<div className='w-24 md:hidden'></div>
 				</div>
 				{/* <div className='mt-6 flex justify-center'>
 					<NextLink
