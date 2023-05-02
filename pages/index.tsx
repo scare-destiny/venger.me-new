@@ -3,6 +3,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { Silkscreen } from 'next/font/google'
 import styles from '@/styles/Home.module.css'
+import Logo from '@/data/logo'
 import {
 	Hero,
 	Services,
@@ -31,9 +32,9 @@ export default function Home() {
 					<p className='text-center font-sans '>
 						Elevate Your Business with Cutting-Edge Marketing & Development Solutions
 					</p>
-					<div>
+					<div className='w-24'>
 						<Link href='/'>
-							Venger.me{' '}
+							<Logo />{' '}
 							{/* <Image
 								src='/vercel.svg'
 								alt='Vercel Logo'
