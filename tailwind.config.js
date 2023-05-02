@@ -19,6 +19,10 @@ module.exports = {
 				'testimonial-gradient':
 					'linear-gradient(to right, var(--pink10), var(--blue10))',
 			}),
+			backgroundImage: (theme) => ({
+				'rainbow-gradient':
+					' -webkit-linear-gradient(0deg,var(--orange10),var(--yellow10),var(--green10) 56%,var(--blue10) 56.1%,var(--pink10),var(--red10))',
+			}),
 			boxShadow: {
 				'testimonial-hover': '0 12px 24px rgba(0, 0, 0, 0.1)',
 			},

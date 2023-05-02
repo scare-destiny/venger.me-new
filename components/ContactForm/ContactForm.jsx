@@ -34,8 +34,8 @@ Let&apos;s Work Together
 						<label className="font-light" htmlFor="accept_terms">I understand and agree to the Privacy Policy.</label>
 						</div>
 						<div className="flex flex-col lg:flex-row justify-between items-center gap-8">
-<button className="  text-center font-extralight text-xl w-[9em] h-[2em] rounded-full before:rounded-full  shadow-2xl shadow-pink-900 uppercase hover:scale-105">
-Send Message
+<button className="  text-center font-medium text-xl w-[9em] h-[2em] rounded-full before:rounded-full  shadow-2xl shadow-pink-900 uppercase hover:scale-105">
+<span className="rainbow">Send Message</span>
 </button>
 						</div>
 				</form>
