@@ -17,12 +17,13 @@ export default function ContactForm() {
 
     try {
       const response = await fetch(
-        "https://script.google.com/macros/s/AKfycbyZ3mI_r2KyIGe8OJ7QSjOLxbNxJqkyY3oWUZ9bdJ4AHMb4sUMIuw-irFJiKjIeV6uvdA/exec",
+        "https://script.google.com/macros/s/AKfycbwowtiuhnjL8__nhfn0xje1O840xyRBvyJ1WEWdGErIaBTd1WZbHswzwsafJd0CUOkBLg/exec",
         {
           method: "POST",
+					redirect: "follow",
           body: JSON.stringify(formData),
           headers: {
-            "Content-Type": "application/json",
+						"Content-Type": "text/plain;charset=utf-8",
           },
         }
       )
