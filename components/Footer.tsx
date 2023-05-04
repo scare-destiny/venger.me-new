@@ -9,7 +9,7 @@ const Footer = () => {
 
 	return (
 		<footer aria-label='Site Footer'>
-			<div className='mx-auto max-w-5xl  py-16 '>
+			<div className='mx-auto max-w-5xl  py-16 md:pb-24 '>
 				<div className='flex justify-center text-teal-600'>
 					<div className='w-24 md:hidden'></div>
 				</div>
