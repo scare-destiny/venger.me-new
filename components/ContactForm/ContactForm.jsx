@@ -68,7 +68,7 @@ Let&apos;s Work Together
 						<label className="font-light" htmlFor="accept_terms">I understand and agree to the Privacy Policy.</label>
 						</div>
 						<div className="flex flex-col lg:flex-row justify-between items-center gap-8">
-<button className="  text-center font-medium text-xl w-[9em] h-[2em] rounded-full before:rounded-full  shadow-2xl shadow-pink-900 uppercase hover:scale-105">
+<button className="  text-center font-medium text-xl w-[9em] h-[2em] rounded-full before:rounded-full  shadow-2xl shadow-pink-900 uppercase  transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 ">
 <span className="rainbow">Send Message</span>
 </button>
 						</div>
