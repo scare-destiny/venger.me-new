@@ -1,6 +1,6 @@
 import { useState } from 'react'
-import { ClipLoader } from 'react-spinners'
-import toast, { Toaster } from 'react-hot-toast'
+import { PacmanLoader } from 'react-spinners'
+import toast from 'react-hot-toast'
 
 export default function ContactForm() {
 	const [name, setName] = useState('')
@@ -119,7 +119,7 @@ export default function ContactForm() {
 								className='  text-center font-medium text-xl w-[9em] h-[2em] rounded-full before:rounded-full  shadow-2xl shadow-pink-900 uppercase  transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 '
 							>
 								{loading ? (
-									<ClipLoader className='transform-gpu' color='#ec4899' size={20} />
+									<PacmanLoader className='transform-gpu' color='#ec4899' size={20} />
 								) : (
 									<span className='rainbow'>Send Message</span>
 								)}
