@@ -102,8 +102,8 @@ export default function ContactForm() {
 						<div>
 							<input
 								required
-								value={terms}
-								onChange={(e) => setTerms(!terms)}
+								checked={terms}
+								onChange={(e) => setTerms(e.target.checked)}
 								className='mr-2'
 								type='checkbox'
 								id='accept_terms'
