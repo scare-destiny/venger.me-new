@@ -1,11 +1,16 @@
 import { useState } from "react"
 
+import toast, {Toaster} from 'react-hot-toast'
+
 
 export default function ContactForm() {
 	const [name, setName] = useState("")
 	const [email, setEmail] = useState("")
 	const [message, setMessage] = useState("")
 	const [terms, setTerms] = useState(false)
+
+	const notifySuccess = () => toast.success('Your message has been sent 👾')
+	const notifyError = () => toast.error('Error occurred while submitting your message, please try again 😖')
 
 	const handleSubmit = async (e) => {
     e.preventDefault()
@@ -28,10 +33,10 @@ export default function ContactForm() {
         }
       )
 
-			response.ok ? alert('Your message has been sent!') : alert('Error occurred while submitting your message.')
+			response.ok ? notifySuccess() : notifyError()
 
     } catch (error) {
-      alert("Failed to submit your message. Please try again later.")
+      notifyError()
     }
 
     setName("")
