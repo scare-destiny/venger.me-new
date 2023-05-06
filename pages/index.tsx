@@ -38,7 +38,7 @@ export default function Home() {
 				const colorIndex = Math.floor((scrollPosition / 600) % colors.length) // Adjust the scroll distance for color change
 				logoRef.current.style.color = colors[colorIndex]
 
-				const horizontalMovement = scrollPosition * 0.05 // Adjust the horizontal movement factor
+				const horizontalMovement = scrollPosition * 0.01 // Adjust the horizontal movement factor
 				logoRef.current.style.transform = `translateX(${horizontalMovement}px)`
 			}
 		}
