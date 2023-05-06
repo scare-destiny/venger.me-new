@@ -18,10 +18,10 @@ export default function Home() {
 
 	useEffect(() => {
 		function updateRotation() {
-		  if (logoRef.current) {
-				const scrollPosition = window.scrollY;
-				const rotation = scrollPosition * 0.1; // Adjust the rotation speed by changing the multiplier
-				logoRef.current.style.transform = `rotate(${rotation}deg)`;
+			if (logoRef.current) {
+				const scrollPosition = window.scrollY
+				const rotation = scrollPosition * 0.05 // Adjust the rotation speed by changing the multiplier
+				logoRef.current.style.transform = `rotate(${rotation}deg)`
 			}
 		}
 
