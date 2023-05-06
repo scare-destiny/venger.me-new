@@ -14,13 +14,15 @@ import {
 } from '@/components'
 
 export default function Home() {
-	const logoRef = useRef(null)
+	const logoRef = useRef<SVGSVGElement | null>(null)
 
 	useEffect(() => {
 		function updateRotation() {
-			const scrollPosition = window.scrollY
-			const rotation = scrollPosition * 0.1 // Adjust the rotation speed by changing the multiplier
-			logoRef.current.style.transform = `rotate(${rotation}deg)`
+		  if (logoRef.current) {
+				const scrollPosition = window.scrollY;
+				const rotation = scrollPosition * 0.1; // Adjust the rotation speed by changing the multiplier
+				logoRef.current.style.transform = `rotate(${rotation}deg)`;
+			}
 		}
 
 		function isMobileDevice() {
