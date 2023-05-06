@@ -20,8 +20,26 @@ export default function Home() {
 		function updateRotation() {
 			if (logoRef.current) {
 				const scrollPosition = window.scrollY
-				const rotation = scrollPosition * 0.05 // Adjust the rotation speed by changing the multiplier
-				logoRef.current.style.transform = `rotate(${rotation}deg)`
+				const colors = [
+					getComputedStyle(document.documentElement)
+						.getPropertyValue('--yellow10')
+						.trim(),
+					getComputedStyle(document.documentElement)
+						.getPropertyValue('--green10')
+						.trim(),
+					getComputedStyle(document.documentElement)
+						.getPropertyValue('--blue10')
+						.trim(),
+					getComputedStyle(document.documentElement)
+						.getPropertyValue('--pink10')
+						.trim(),
+				]
+
+				const colorIndex = Math.floor((scrollPosition / 600) % colors.length) // Adjust the scroll distance for color change
+				logoRef.current.style.color = colors[colorIndex]
+
+				const horizontalMovement = scrollPosition * 0.05 // Adjust the horizontal movement factor
+				logoRef.current.style.transform = `translateX(${horizontalMovement}px)`
 			}
 		}
 
@@ -32,9 +50,9 @@ export default function Home() {
 			)
 		}
 
-		if (isMobileDevice()) {
-			window.addEventListener('scroll', updateRotation)
-		}
+		// if (isMobileDevice()) {
+		window.addEventListener('scroll', updateRotation)
+		// }
 
 		return () => {
 			if (isMobileDevice()) {
@@ -61,7 +79,7 @@ export default function Home() {
 					</p>
 					<div className='w-36'>
 						<Link href='/'>
-							<Logo ref={logoRef} />{' '}
+							<Logo ref={logoRef} className='logo' />{' '}
 							{/* <Image
 								src='/vercel.svg'
 								alt='Vercel Logo'

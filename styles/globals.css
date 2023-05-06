@@ -113,6 +113,10 @@ a {
   text-decoration: none;
 }
 
+.logo {
+  fill: var(--logo-color);
+}
+
 .rainbow {
   background-image: -webkit-linear-gradient(0deg,var(--orange10),var(--yellow10),var(--green10) 56%,var(--blue10) 56.1%,var(--pink10),var(--red10));
 	background-clip: text;
