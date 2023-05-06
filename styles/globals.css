@@ -137,7 +137,7 @@ a {
 
 @keyframes blink-caret {
   0%, 100% { border-color: transparent }
-  50% { border-color: pink; }
+  50% { border-color: var(--pink10); }
 }
 
 
