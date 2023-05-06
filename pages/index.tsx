@@ -1,5 +1,5 @@
 import Head from 'next/head'
-import Image from 'next/image'
+import { useRef, useEffect } from 'react'
 import Link from 'next/link'
 import { Silkscreen } from 'next/font/google'
 import styles from '@/styles/Home.module.css'
@@ -13,15 +13,34 @@ import {
 	ContactForm,
 } from '@/components'
 
-const silkscreen = Silkscreen({ subsets: ['latin'], weight: '400' })
-
-const prompts = [
-	'Welcome to our website!',
-	'Check out our services!',
-	'Get in touch with us!',
-]
-
 export default function Home() {
+	const logoRef = useRef(null)
+
+	useEffect(() => {
+		function updateRotation() {
+			const scrollPosition = window.scrollY
+			const rotation = scrollPosition * 0.1 // Adjust the rotation speed by changing the multiplier
+			logoRef.current.style.transform = `rotate(${rotation}deg)`
+		}
+
+		function isMobileDevice() {
+			return (
+				typeof window.orientation !== 'undefined' ||
+				navigator.userAgent.indexOf('IEMobile') !== -1
+			)
+		}
+
+		if (isMobileDevice()) {
+			window.addEventListener('scroll', updateRotation)
+		}
+
+		return () => {
+			if (isMobileDevice()) {
+				window.removeEventListener('scroll', updateRotation)
+			}
+		}
+	}, [])
+
 	return (
 		<>
 			<Head>
@@ -40,7 +59,7 @@ export default function Home() {
 					</p>
 					<div className='w-36'>
 						<Link href='/'>
-							<Logo />{' '}
+							<Logo ref={logoRef} />{' '}
 							{/* <Image
 								src='/vercel.svg'
 								alt='Vercel Logo'

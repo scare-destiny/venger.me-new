@@ -1,10 +1,17 @@
-export default function Logo() {
+import { forwardRef } from 'react'
+
+interface Logo extends React.SVGProps<SVGSVGElement> {
+	// Add any other custom props here
+}
+
+const Logo = forwardRef<SVGSVGElement, Logo>(function Logo(props, ref) {
 	return (
 		<svg
 			width='250.90000000000003'
 			height='69.54232568568318'
 			viewBox='0 0 369.9130434782609 75.24016772432729'
 			className='css-1j8o68f'
+			ref={ref}
 		>
 			<defs id='SvgjsDefs2164'></defs>
 			<g
@@ -76,4 +83,6 @@ export default function Logo() {
 			</g>
 		</svg>
 	)
-}
+})
+
+export default Logo
