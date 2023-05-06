@@ -3,14 +3,15 @@ import styles from '../styles/Hero.module.css'
 export default function Hero() {
 	return (
 		<div className={styles.center}>
-			<div className='flex-col  items-start max-w-md  md:max-w-7xl  pt-16 '>
-				<h1 className='text-left font-serif font-bold break-words max-w-5 text-4xl sm:text-6xl lg:text-8xl  md:text-center '>
+			<div className='container flex flex-col justify-start items-start max-w-md md:max-w-7xl pt-16'>
+				<h1 className='typewriter-effect max-w-fit leading-relaxed font-serif font-bold break-words text-4xl sm:text-6xl lg:text-8xl mb-4'>
 					<span className={styles.rainbow}>Venger.me</span>
-					<br></br>
+				</h1>
+				<h1 className='font-serif font-bold break-words text-4xl sm:text-6xl lg:text-8xl mb-4'>
 					Unique Blend of Marketing and Development
 				</h1>
-				<div className='flex-col items-center pt-4 max-w-sm  md:max-w-full  md:pl-64 md:pr-64 '>
-					<p className='font-mono text-xl md:text-2xl md:text-center'>
+				<div className='flex flex-col items-start pt-4 max-w-sm md:max-w-full '>
+					<p className='font-mono text-xl md:text-2xl'>
 						Empowering Businesses with a Unique Blend of Marketing and Development
 					</p>
 				</div>

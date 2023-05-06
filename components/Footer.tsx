@@ -1,27 +1,10 @@
-import logo from '../public/Logo-JvG-Saddle-Innovations-gross_klein.webp'
-import NextLink from 'next/link'
-import Image from 'next/image'
-import Logo from '@/data/logo'
-import { useRouter } from 'next/router'
-
 const Footer = () => {
-	const router = useRouter()
-
 	return (
 		<footer aria-label='Site Footer'>
 			<div className='mx-auto max-w-5xl  pt-16 pb-24  lg:pb-16 '>
 				<div className='flex justify-center text-teal-600'>
 					<div className='w-24 md:hidden'></div>
 				</div>
-				{/* <div className='mt-6 flex justify-center'>
-					<NextLink
-						href='https://westernsattel.de'
-						target='_blank'
-						className='bg-gradient-to-r from-red-500 to-gray-500 text-white font-semibold py-4 px-4 sm:px-6  rounded-lg shadow-md hover:opacity-90 transition duration-200  leading-normal '
-					>
-						Besuchen Sie unsere Hauptseite
-					</NextLink>
-				</div> */}
 
 				<p className='mx-auto mt-6 max-w-md text-center font-serif  leading-relaxed text-gray-500 dark:text-white '>
 					As a growth marketer turned software developer, I specialize in helping

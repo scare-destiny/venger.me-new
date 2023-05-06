@@ -121,32 +121,24 @@ a {
 }
 
 .typewriter-effect {
-  white-space: nowrap;
-  overflow: hidden;
-  width: 0;
-  animation: type 3s steps(22) 1s forwards infinite, blink 0.5s steps(1) infinite;
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid orange; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  letter-spacing: .15em; /* Adjust as needed */
+  animation: 
+    typing 2.5s steps(30, end),
+    blink-caret .75s step-end infinite;
 }
 
-
-@keyframes type {
-  to {
-    width: 22ch;
-  }
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
 }
 
-@keyframes blink {
-  0%,
-  100% {
-    border-color: transparent;
-  }
-
-  50% {
-    border-color: #000;
-  }
+@keyframes blink-caret {
+  0%, 100% { border-color: transparent }
+  50% { border-color: pink; }
 }
-
-
-
 
 
 @media (prefers-color-scheme: dark) {
