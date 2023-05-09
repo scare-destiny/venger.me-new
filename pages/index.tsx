@@ -21,23 +21,23 @@ export default function Home() {
 		function updateRotation() {
 			if (logoRef.current) {
 				const scrollPosition = window.scrollY
-				const colors = [
-					getComputedStyle(document.documentElement)
-						.getPropertyValue('--yellow10')
-						.trim(),
-					getComputedStyle(document.documentElement)
-						.getPropertyValue('--green10')
-						.trim(),
-					getComputedStyle(document.documentElement)
-						.getPropertyValue('--blue10')
-						.trim(),
-					getComputedStyle(document.documentElement)
-						.getPropertyValue('--pink10')
-						.trim(),
-				]
+				// const colors = [
+				// 	getComputedStyle(document.documentElement)
+				// 		.getPropertyValue('--yellow10')
+				// 		.trim(),
+				// 	getComputedStyle(document.documentElement)
+				// 		.getPropertyValue('--green10')
+				// 		.trim(),
+				// 	getComputedStyle(document.documentElement)
+				// 		.getPropertyValue('--blue10')
+				// 		.trim(),
+				// 	getComputedStyle(document.documentElement)
+				// 		.getPropertyValue('--pink10')
+				// 		.trim(),
+				// ]
 
-				const colorIndex = Math.floor((scrollPosition / 600) % colors.length) // Adjust the scroll distance for color change
-				logoRef.current.style.color = colors[colorIndex]
+				// const colorIndex = Math.floor((scrollPosition / 600) % colors.length) // Adjust the scroll distance for color change
+				// logoRef.current.style.color = colors[colorIndex]
 
 				const horizontalMovement = scrollPosition * 0.01 // Adjust the horizontal movement factor
 				logoRef.current.style.transform = `translateX(${horizontalMovement}px)`
