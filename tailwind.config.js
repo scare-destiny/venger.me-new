@@ -29,6 +29,12 @@ module.exports = {
 			scale: {
 				99: '.99',
 			},
+			backgroundColor: {
+				yellow10: 'var(--yellow10)',
+			},
+			textColor: {
+				pink10: 'var(--pink10)',
+			},
 		},
 	},
 	variants: {
@@ -36,6 +42,7 @@ module.exports = {
 			backgroundImage: ['hover'],
 			boxShadow: ['hover'],
 			scale: ['hover'],
+			display: ['group-hover'],
 		},
 	},
 
