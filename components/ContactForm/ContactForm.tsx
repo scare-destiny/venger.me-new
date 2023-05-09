@@ -63,7 +63,7 @@ export default function ContactForm() {
 					</div>
 					<form
 						onSubmit={handleSubmit}
-						className='flex-1 rounded-2xl flex flex-col gap-y-6 pb-20 p-6 border  border-pink-300'
+						className='flex-1 rounded-2xl flex flex-col gap-y-6 pb-20 p-6 border  border-purple-400'
 					>
 						<div>
 							<input
@@ -72,7 +72,7 @@ export default function ContactForm() {
 								onChange={(e) => setName(e.target.value)}
 								type='text'
 								name='name'
-								className='w-full px-2 bg-transparent border-b border-pink-300 py-3 outline-none placeholder:text-gray-600 dark:placeholder:text-white focus:border-pink-400 transition-all duration-300'
+								className='w-full px-2 bg-transparent border-b border-purple-300 py-3 outline-none placeholder:text-gray-600 dark:placeholder:text-white focus:border-purple-300 transition-all duration-300'
 								placeholder='Your name'
 								autoComplete='name'
 							/>
@@ -84,7 +84,7 @@ export default function ContactForm() {
 								onChange={(e) => setEmail(e.target.value)}
 								type='text'
 								name='email'
-								className='w-full px-2 bg-transparent border-b border-pink-300 py-3 outline-none placeholder:text-gray-600 dark:placeholder:text-white focus:border-pink-400 transition-all duration-300'
+								className='w-full px-2 bg-transparent border-b border-purple-300 py-3 outline-none placeholder:text-gray-600 dark:placeholder:text-white focus:border-purple-300 transition-all duration-300'
 								placeholder='Your email'
 								autoComplete='email'
 							/>
@@ -95,7 +95,7 @@ export default function ContactForm() {
 								value={message}
 								onChange={(e) => setMessage(e.target.value)}
 								name='message'
-								className='w-full px-2 bg-transparent border-b border-pink-300 py-8 outline-none placeholder:text-gray-600 dark:placeholder:text-white transition-all focus:border-pink-400 duration-300 resize-none'
+								className='w-full px-2 bg-transparent border-b border-purple-300 py-8 outline-none placeholder:text-gray-600 dark:placeholder:text-white transition-all focus:border-purple-300 duration-300 resize-none'
 								placeholder='Your Message'
 							></textarea>
 						</div>

@@ -26,7 +26,7 @@ const Projects: React.FC = () => {
 	return (
 		<section className=' py-16'>
 			<div className='container mx-auto px-4'>
-				<h2 className='text-3xl   font-semibold text-center text-gray-800 dark:text-gray-100 mb-2 lg:mb-4'>
+				<h2 className='text-3xl  font-semibold text-center text-gray-800 dark:text-gray-100 mb-2 lg:mb-4'>
 					My Projects
 				</h2>
 				<blockquote className='text-xl text-center italic mb-6 text-gray-700 dark:text-gray-300 relative'>
