@@ -25,7 +25,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
 				{title}
 			</h3>
 			<p className='text-gray-700 dark:text-gray-300'>{description}</p>
-			<p className='mt-2 text-pink10 dark:text-purple-400 font-semibold'>
+			<p className='mt-2 text-pink10 dark:text-purple-400 font-bold font-mono'>
 				<span className='inline-block animate-pulse'>
 					<span className='mr-1 text-xl' role='img' aria-label='star'>
 						⭐
