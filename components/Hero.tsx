@@ -4,7 +4,7 @@ export default function Hero() {
 	return (
 		<div className={styles.center}>
 			<div className='container flex flex-col justify-start items-start max-w-md md:max-w-7xl pt-16'>
-				<h1 className='typewriter-effect max-w-fit leading-relaxed font-serif font-bold break-words text-4xl sm:text-6xl lg:text-8xl mb-4'>
+				<h1 className='typewriter-effect max-w-fit  md:leading-tight lg:leading-snug  font-serif font-bold break-words text-4xl sm:text-6xl lg:text-8xl mb-4'>
 					<span className={styles.rainbow}>Venger.me</span>
 				</h1>
 				<h1 className='font-serif font-bold break-words text-4xl sm:text-6xl lg:text-8xl mb-4'>

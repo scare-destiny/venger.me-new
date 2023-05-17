@@ -53,13 +53,18 @@ export default function ContactForm() {
 		<section className='pt-16  md:ml-8'>
 			<div className='container mx-auto'>
 				<div className='flex flex-col lg:flex-row  dark:text-white'>
-					<div className='md:flex-1 md:flex-col md:flex items-center md:items-start md:justify-center'>
+					<div className='md:flex-1 md:flex-col md:flex items-center md:items-start md:justify-center lg:pr-12'>
 						<h4 className='text-4xl font-serif   uppercase  tracking-wide mb-2'>
 							Get In Touch
 						</h4>
-						<h2 className='text-6xl  font-serif  leading-none mb-12'>
+						<h2 className='text-6xl  font-serif  leading-none mb-6'>
 							Let&apos;s Work Together
 						</h2>
+						<p className=' font-serif  dark:text-white mb-12'>
+							Currently, I am delving deeper into deep learning and I am most excited
+							about projects in this area. If you have a project or idea related to
+							deep learning, I would love to hear about it!
+						</p>
 					</div>
 					<form
 						onSubmit={handleSubmit}

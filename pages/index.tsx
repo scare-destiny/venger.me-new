@@ -12,6 +12,7 @@ import {
 	FadeInSection,
 	ContactForm,
 	Projects,
+	Punch,
 } from '@/components'
 
 export default function Home() {
@@ -100,6 +101,7 @@ export default function Home() {
 				</FadeInSection> */}
 				<Projects />
 				<Testimonials />
+				{/* <Punch /> */}
 				<FadeInSection>
 					<ContactForm />
 				</FadeInSection>
