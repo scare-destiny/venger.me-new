@@ -60,11 +60,11 @@ export default function ContactForm() {
 						<h2 className='text-6xl  font-serif  leading-none mb-6'>
 							Let&apos;s Work Together
 						</h2>
-						<p className=' font-serif  dark:text-white mb-12'>
+						{/* <p className=' font-serif  dark:text-white mb-12'>
 							Currently, I am delving deeper into deep learning and I am most excited
 							about projects in this area. If you have a project or idea related to
 							deep learning, I would love to hear about it!
-						</p>
+						</p> */}
 					</div>
 					<form
 						onSubmit={handleSubmit}
