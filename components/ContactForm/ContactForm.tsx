@@ -25,17 +25,14 @@ export default function ContactForm() {
 		}
 
 		try {
-			const response = await fetch(
-				'https://script.google.com/macros/s/AKfycbwowtiuhnjL8__nhfn0xje1O840xyRBvyJ1WEWdGErIaBTd1WZbHswzwsafJd0CUOkBLg/exec',
-				{
-					method: 'POST',
-					redirect: 'follow',
-					body: JSON.stringify(formData),
-					headers: {
-						'Content-Type': 'text/plain;charset=utf-8',
-					},
-				}
-			)
+			const response = await fetch('/api/send', {
+				method: 'POST',
+				// redirect: 'follow',
+				body: JSON.stringify(formData),
+				headers: {
+					'Content-Type': 'application/json',
+				},
+			})
 
 			response.ok ? notifySuccess() : notifyError()
 		} catch (error) {
