@@ -6,7 +6,7 @@ const Footer = () => {
 					<div className='w-24 md:hidden'></div>
 				</div>
 
-				<p className='mx-auto mt-6 max-w-md text-center font-serif  leading-relaxed text-gray-500 dark:text-white '>
+				<p className='mx-auto mt-6 max-w-md text-center font-serif  leading-relaxed text-white '>
 					As a growth marketer turned software developer, I specialize in helping
 					businesses reach new heights by combining automation, software development,
 					and marketing expertise.

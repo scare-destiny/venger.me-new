@@ -15,18 +15,8 @@ interface FeatureProps {
 }
 
 const Feature: FC<FeatureProps> = ({ text, IconComponent }) => {
-	const [isVisible, setIsVisible] = useState(false)
-
-	useEffect(() => {
-		setIsVisible(true)
-	}, [])
-
 	return (
-		<div
-			className={`flex items-center space-x-2 transition-opacity duration-1000 ${
-				isVisible ? 'opacity-100' : 'opacity-0'
-			}`}
-		>
+		<div className='flex items-center space-x-2 transition-opacity duration-1000 '>
 			<div className='w-8 h-8 bg-black-100 rounded-full flex items-center justify-center'>
 				<IconComponent className='text-purple-400 w-5 h-5' />
 			</div>
@@ -36,19 +26,9 @@ const Feature: FC<FeatureProps> = ({ text, IconComponent }) => {
 }
 
 const Features: FC = () => {
-	const [isVisible, setIsVisible] = useState(false)
-
-	useEffect(() => {
-		setIsVisible(true)
-	}, [])
-
 	return (
 		<div className='container max-w-md md:max-w-7xl pt-16 '>
-			<div
-				className={`grid grid-cols-1 md:grid-cols-2 gap-10 transition-opacity duration-1000 ${
-					isVisible ? 'opacity-100' : 'opacity-0'
-				}`}
-			>
+			<div className='grid grid-cols-1 md:grid-cols-2 gap-10 transition-opacity duration-1000'>
 				<div className='space-y-4'>
 					<p className='uppercase font-semibold text-sm bg-callout border-callout-border p-2 rounded-md'>
 						About Me

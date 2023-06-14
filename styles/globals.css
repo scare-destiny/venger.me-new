@@ -51,7 +51,6 @@
   --red10:   hsl(358, 39%, 60%);
 }
 
-@media (prefers-color-scheme: dark) {
   :root {
     --foreground-rgb: 255, 255, 255;
     --background-start-rgb: 0, 0, 0;
@@ -83,8 +82,6 @@
     --card-border-rgb: 200, 200, 200;
   }
 
-
-}
 
 * {
   box-sizing: border-box;
@@ -146,8 +143,8 @@ a {
 }
 
 
-@media (prefers-color-scheme: dark) {
+
   html {
     color-scheme: dark;
   }
-}
+

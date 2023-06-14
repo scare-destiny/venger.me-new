@@ -26,15 +26,15 @@ const Projects: React.FC = () => {
 	return (
 		<section className=' py-16'>
 			<div className=' mx-auto px-4 container max-w-md md:max-w-7xl '>
-				<h2 className='text-3xl  font-semibold text-center text-gray-800 dark:text-gray-100 mb-2 lg:mb-4'>
+				<h2 className='text-3xl  font-semibold text-center text-gray-100  mb-2 lg:mb-4'>
 					My Projects
 				</h2>
-				<blockquote className='text-xl text-center italic mb-6 text-gray-700 dark:text-gray-300 relative'>
+				<blockquote className='text-xl text-center italic mb-6 text-gray-300 relative'>
 					{quote}
 					<span className='group relative inline-block'>
-						<span className='ml-2 text-yellow-500 dark:text-yellow-400 cursor-pointer'>
+						<span className='ml-2 text-yellow-400 cursor-pointer'>
 							🤪
-							<span className='absolute left-2 lg:left-1/2 -bottom-8 transform -translate-x-1/2 hidden group-hover:block z-50	 w-max bg-gray-800 dark:bg-gray-100 text-white dark:text-black text-xs px-2 py-1 rounded'>
+							<span className='absolute left-2 lg:left-1/2 -bottom-8 transform -translate-x-1/2 hidden group-hover:block z-50	 w-max bg-gray-100 text-black text-xs px-2 py-1 rounded'>
 								This quote is generated randomly! 🎲
 							</span>
 						</span>
