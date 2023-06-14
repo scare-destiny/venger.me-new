@@ -16,6 +16,7 @@ export default async (req: NextApiRequest, res: NextApiResponse) => {
 			to: 'zhenya.venger@gmail.com',
 			subject: 'Hello world',
 			html: '<strong>It works!</strong>',
+			// @ts-ignore
 			react: EmailTemplate({
 				name: name,
 				email: email,

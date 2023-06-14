@@ -6,7 +6,7 @@ import styles from '@/styles/Home.module.css'
 import Logo from '@/data/logo'
 import {
 	Hero,
-	Services,
+	Features,
 	Footer,
 	Testimonials,
 	FadeInSection,
@@ -95,6 +95,9 @@ export default function Home() {
 				</div>
 				<FadeInSection>
 					<Hero />
+				</FadeInSection>
+				<FadeInSection>
+					<Features />
 				</FadeInSection>
 				{/* <FadeInSection>
 					<Services />

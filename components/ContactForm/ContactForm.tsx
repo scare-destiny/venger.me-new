@@ -47,7 +47,7 @@ export default function ContactForm() {
 	}
 
 	return (
-		<section className='pt-16  md:ml-8'>
+		<section className='pt-16  md:ml-8 container max-w-md md:max-w-7xl '>
 			<div className='container mx-auto'>
 				<div className='flex flex-col lg:flex-row  dark:text-white'>
 					<div className='md:flex-1 md:flex-col md:flex items-center md:items-start md:justify-center lg:pr-12'>

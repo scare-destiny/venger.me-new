@@ -35,6 +35,12 @@ module.exports = {
 			textColor: {
 				pink10: 'var(--pink10)',
 			},
+			colors: {
+				'callout': 'rgb(var(--callout-rgb))',
+				'callout-border': 'rgb(var(--callout-border-rgb))',
+				'card': 'rgb(var(--card-rgb))',
+				'card-border': 'rgb(var(--card-border-rgb))',
+			},
 		},
 	},
 	variants: {
