@@ -18,7 +18,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
 	return (
 		<div
 			key={id}
-			className=' bg-gray-800  rounded-lg shadow-md p-6 transform transition-transform duration-300 hover:scale-105 border '
+			className=' bg-gray-800 md:h-96  rounded-lg shadow-md p-6 transform transition-transform duration-300 hover:scale-105 border '
 		>
 			<div dangerouslySetInnerHTML={{ __html: svg }} className='mb-4' />
 			<h3 className='text-2xl font-semibold mb-4 text-gray-100'>{title}</h3>

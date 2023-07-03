@@ -1,5 +1,6 @@
+import { FiExternalLink } from 'react-icons/fi'
 import React, { useEffect, useState } from 'react'
-import { projects } from '@/data/projects'
+import { projects, personalProjects } from '@/data/projects'
 import ProjectCard from './ProjectCard'
 
 interface Project {
@@ -8,10 +9,12 @@ interface Project {
 	description: string
 	results: string
 	svg: string
+	link?: string
 }
 
 const Projects: React.FC = () => {
 	const [quote, setQuote] = useState<string>('')
+	const [projectData, setProjectData] = useState(projects)
 
 	useEffect(() => {
 		const fetchData = async () => {
@@ -24,11 +27,26 @@ const Projects: React.FC = () => {
 	}, [])
 
 	return (
-		<section className=' py-16'>
-			<div className=' mx-auto px-4 container max-w-md md:max-w-7xl '>
-				<h2 className='text-3xl  font-semibold text-center text-gray-100  mb-2 lg:mb-4'>
+		<section className='py-16'>
+			<div className='mx-auto px-4 container max-w-md md:max-w-7xl'>
+				<h2 className='text-3xl font-semibold text-center text-gray-100 mb-2 lg:mb-4'>
 					My Projects
 				</h2>
+
+				<div className='flex justify-center mb-4'>
+					<button
+						onClick={() => setProjectData(projects)}
+						className='px-6 py-2 border border-blue-300 text-blue-300 rounded transition duration-200 ease-in-out hover:bg-blue-500 hover:text-white focus:outline-none focus:ring-2 focus:ring-blue-600 focus:ring-opacity-50 mr-2'
+					>
+						Commercial Projects
+					</button>
+					<button
+						onClick={() => setProjectData(personalProjects)}
+						className='px-6 py-2 border border-green-300 text-green-300 rounded transition duration-200 ease-in-out hover:bg-green-500 hover:text-white focus:outline-none focus:ring-2 focus:ring-green-600 focus:ring-opacity-50'
+					>
+						Personal Projects
+					</button>
+				</div>
 				<blockquote className='text-xl text-center italic mb-6 text-gray-300 relative'>
 					{quote}
 					<span className='group relative inline-block'>
@@ -40,17 +58,30 @@ const Projects: React.FC = () => {
 						</span>
 					</span>
 				</blockquote>
-
 				<div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8'>
-					{projects.map((project) => (
-						<ProjectCard
-							key={project.id}
-							id={project.id}
-							title={project.title}
-							description={project.description}
-							results={project.results}
-							svg={project.svg}
-						/>
+					{projectData.map((project: Project) => (
+						<div key={project.id} className='flex flex-col'>
+							<div className='relative group flex-grow'>
+								<ProjectCard
+									id={project.id}
+									title={project.title}
+									description={project.description}
+									results={project.results}
+									svg={project.svg}
+								/>
+								{project.link && (
+									<a
+										href={project.link}
+										target='_blank'
+										rel='noopener noreferrer'
+										className='absolute right-4 top-4 mb-2 mr-2 bg-blue-500 text-white px-2 py-1 rounded-full group-hover:opacity-100 transition-opacity duration-200 flex items-center'
+									>
+										<FiExternalLink className='mr-1 z-10' />
+										Visit
+									</a>
+								)}
+							</div>
+						</div>
 					))}
 				</div>
 			</div>
