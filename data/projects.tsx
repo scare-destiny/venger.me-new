@@ -54,8 +54,7 @@ export const projects = [
 		title: 'Slack Bot for Email Deliverability Audits',
 		description:
 			'Built a Slack bot to streamline email deliverability audits for potential agency clients, checking SPF, DKIM, and DMARC records.',
-		results:
-			'Reduced audit time from minutes to seconds, performed hundreds of audits',
+		results: 'Reduced audit time from minutes to seconds',
 		svg: `<svg width="70" height="70" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M7 22H17L23 12L17 2H7L1 12L7 22Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
 </svg>`,
