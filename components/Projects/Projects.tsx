@@ -1,4 +1,3 @@
-import { FiExternalLink } from 'react-icons/fi'
 import React, { useEffect, useState } from 'react'
 import { projects, personalProjects } from '@/data/projects'
 import ProjectCard from './ProjectCard'
@@ -68,18 +67,8 @@ const Projects: React.FC = () => {
 									description={project.description}
 									results={project.results}
 									svg={project.svg}
+									link={project.link}
 								/>
-								{project.link && (
-									<a
-										href={project.link}
-										target='_blank'
-										rel='noopener noreferrer'
-										className='absolute right-4 top-4 mb-2 mr-2 bg-blue-500 text-white px-2 py-1 rounded-full group-hover:opacity-100 transition-opacity duration-200 flex items-center'
-									>
-										<FiExternalLink className='mr-1 z-10' />
-										Visit
-									</a>
-								)}
 							</div>
 						</div>
 					))}

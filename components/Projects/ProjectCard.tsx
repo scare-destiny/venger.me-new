@@ -1,4 +1,5 @@
 import React from 'react'
+import { FiExternalLink } from 'react-icons/fi'
 
 interface ProjectCardProps {
 	id: number
@@ -6,6 +7,7 @@ interface ProjectCardProps {
 	description: string
 	results: string
 	svg: string
+	link?: string
 }
 
 const ProjectCard: React.FC<ProjectCardProps> = ({
@@ -14,6 +16,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
 	description,
 	results,
 	svg,
+	link,
 }) => {
 	return (
 		<div
@@ -31,6 +34,17 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
 				</span>
 				{results}
 			</p>
+			{link && (
+				<a
+					href={link}
+					target='_blank'
+					rel='noopener noreferrer'
+					className='absolute right-4 top-4 mb-2 mr-2 bg-blue-500 text-white px-2 py-1 rounded-full group-hover:opacity-100 transition-opacity duration-200 flex items-center'
+				>
+					<FiExternalLink className='mr-1 z-10' />
+					Visit
+				</a>
+			)}
 		</div>
 	)
 }
