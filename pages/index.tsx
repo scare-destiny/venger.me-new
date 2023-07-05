@@ -66,7 +66,7 @@ export default function Home() {
 	return (
 		<>
 			<Head>
-				<title>Venger.me - Personal Portfolio Website</title>
+				<title>Web Developer & Technical Marketer - Venger.me </title>
 				<meta
 					name='description'
 					content='Empowering Businesses with a Unique Blend of Marketing and Development.'
