@@ -1,6 +1,8 @@
 import Head from 'next/head'
 import { useRef, useEffect } from 'react'
 import Link from 'next/link'
+import { useRouter } from 'next/router'
+import { FormattedMessage, useIntl } from 'react-intl'
 import { Silkscreen } from 'next/font/google'
 import styles from '@/styles/Home.module.css'
 import Logo from '@/data/logo'
@@ -17,6 +19,14 @@ import {
 
 export default function Home() {
 	const logoRef = useRef<SVGSVGElement | null>(null)
+
+	const { locales } = useRouter()
+	const intl = useIntl()
+
+	const title = intl.formatMessage({ id: 'page.home.head.title' })
+	const description = intl.formatMessage({
+		id: 'page.home.head.meta.description',
+	})
 
 	useEffect(() => {
 		function updateRotation() {
@@ -66,19 +76,33 @@ export default function Home() {
 	return (
 		<>
 			<Head>
-				<title>Web Developer & Technical Marketer - Venger.me </title>
-				<meta
-					name='description'
-					content='Empowering Businesses with a Unique Blend of Marketing and Development.'
-				/>
+				<title>{title} </title>
+				<meta name='description' content={description} />
 				<meta name='viewport' content='width=device-width, initial-scale=1' />
 				<link rel='icon' href='/favicon.ico' />
+				<link rel='alternate' href='https://venger.me' hrefLang='x-default' />
+				<link rel='alternate' href='https://venger.me' hrefLang='uk-UA' />
 			</Head>
 			<main className={styles.main}>
 				<div className={styles.description}>
 					<p className='text-center font-sans '>
 						Elevate Your Business with Cutting-Edge Marketing & Development Solutions
 					</p>
+					{/* {[...locales].sort().map((locale) => (
+						<Link key={locale} href='/' locale={locale}>
+							{locale}
+						</Link>
+					))} */}
+					{/* <FormattedMessage id='page.home.description' />
+					<FormattedMessage
+						id='page.home.title'
+						values={{ b: (chunks) => <b>{chunks}</b> }}
+					/>
+					<FormattedMessage
+						id='page.home.title'
+						values={{ b: (chunks) => <b>{chunks}</b> }}
+					/> */}
+
 					<div className='w-36'>
 						<Link href='/'>
 							<Logo ref={logoRef} className='logo' />{' '}
