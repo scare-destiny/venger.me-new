@@ -16,7 +16,7 @@ type LocaleMessage = {
 	'page.home.description': string
 }
 
-const messages = {
+const messages: { [key: string]: LocaleMessage } = {
 	'uk-UA': ukUA,
 	'en-US': enUS,
 }
@@ -27,7 +27,7 @@ const silkscreen = Silkscreen({
 	variable: '--font-silkscreen',
 })
 
-function getDirection(locale) {
+function getDirection(locale: string) {
 	if (locale === 'ar') {
 		return 'rtl'
 	}
@@ -40,7 +40,10 @@ export default function App({ Component, pageProps }: AppProps) {
 	const currentLocale = locale || 'en'
 
 	return (
-		<IntlProvider locale={locale} messages={messages[locale]}>
+		<IntlProvider
+			locale={locale || 'en-US'}
+			messages={messages[locale || 'en-US']}
+		>
 			<main className={`${silkscreen.variable} font-sans`}>
 				<Component {...pageProps} />
 				<Analytics />
