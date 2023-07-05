@@ -27,13 +27,7 @@ const silkscreen = Silkscreen({
 	variable: '--font-silkscreen',
 })
 
-function getDirection(locale: string) {
-	if (locale === 'ar') {
-		return 'rtl'
-	}
 
-	return 'ltr'
-}
 
 export default function App({ Component, pageProps }: AppProps) {
 	const { locale } = useRouter()
