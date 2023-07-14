@@ -29,13 +29,10 @@ const silkscreen = Silkscreen({
 
 export default function App({ Component, pageProps }: AppProps) {
 	const { locale } = useRouter()
-	const currentLocale = locale || 'en'
+	const currentLocale = locale
 
 	return (
-		<IntlProvider
-			locale={(locale as string) || 'en-US'}
-			messages={messages[locale || 'en-US']}
-		>
+		<IntlProvider locale={locale as string} messages={messages[locale!]}>
 			<main className={`${silkscreen.variable} font-sans`}>
 				<Component {...pageProps} />
 				<Analytics />
