@@ -9,14 +9,14 @@ import { Silkscreen } from 'next/font/google'
 import ukUA from '../lang/uk-UA.json'
 import enUS from '../lang/en-US.json'
 
-type LocaleMessage = {
-	'page.home.head.title': string
-	'page.home.head.meta.description': string
-	'page.home.title': string
-	'page.home.description': string
-}
+// type LocaleMessage = {
+// 	'page.home.head.title': string
+// 	'page.home.head.meta.description': string
+// 	'page.home.title': string
+// 	'page.home.description': string
+// }
 
-const messages: { [key: string]: LocaleMessage } = {
+const messages: any = {
 	'uk-UA': ukUA,
 	'en-US': enUS,
 }
@@ -27,15 +27,13 @@ const silkscreen = Silkscreen({
 	variable: '--font-silkscreen',
 })
 
-
-
 export default function App({ Component, pageProps }: AppProps) {
 	const { locale } = useRouter()
 	const currentLocale = locale || 'en'
 
 	return (
 		<IntlProvider
-			locale={locale || 'en-US'}
+			locale={(locale as string) || 'en-US'}
 			messages={messages[locale || 'en-US']}
 		>
 			<main className={`${silkscreen.variable} font-sans`}>

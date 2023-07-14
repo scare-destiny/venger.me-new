@@ -1,6 +1,12 @@
 {
   "page.home.head.title": "Web Developer & Technical Marketer - Venger.me ",
   "page.home.head.meta.description": "Empowering Businesses with a Unique Blend of Marketing and Development.",
-  "page.home.title": "Welcome to <b>Next.js i18n tutorial</b>",
-  "page.home.description": "Unique Blend of Marketing and Development 🚀"
+  "page.home.title": "Unique Blend of Marketing and Development 🚀",
+  "page.home.description": "Empowering Businesses with a Unique Blend of Marketing and Development",
+  "page.home.about": "ABOUT ME",
+  "page.home.bio": "Software developer and technical marketer",
+  "page.home.info": "I specialize in helping businesses reach new heights by combining automation, software development, and marketing expertise. All my work includes:",
+  "page.home.feature1": "Cutting-edge Software Development",
+  "page.home.feature2": "Efficient Automation Solutions",
+  "page.home.feature3": "Best Practices"
 }
