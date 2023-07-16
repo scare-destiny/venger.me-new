@@ -17,7 +17,7 @@ import enUS from '../lang/en-US.json'
 // }
 
 const messages: any = {
-	'uk-UA': ukUA,
+	'uk': ukUA,
 	'en-US': enUS,
 }
 
