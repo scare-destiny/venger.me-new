@@ -4,6 +4,7 @@ import { Analytics } from '@vercel/analytics/react'
 import { useRouter } from 'next/router'
 import { IntlProvider } from 'react-intl'
 import { Toaster } from 'react-hot-toast'
+import 'node_modules/flag-icons/css/flag-icons.min.css'
 import { Silkscreen } from 'next/font/google'
 
 import ukUA from '../lang/uk-UA.json'

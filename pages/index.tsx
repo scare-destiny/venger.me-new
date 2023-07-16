@@ -14,6 +14,7 @@ import {
 	FadeInSection,
 	ContactForm,
 	Projects,
+	LanguageSelector,
 	Punch,
 } from '@/components'
 
@@ -88,33 +89,11 @@ export default function Home() {
 					<p className='text-center font-sans '>
 						Elevate Your Business with Cutting-Edge Marketing & Development Solutions
 					</p>
-					{/* {[...locales].sort().map((locale) => (
-						<Link key={locale} href='/' locale={locale}>
-							{locale}
-						</Link>
-					))} */}
-					{/* <FormattedMessage id='page.home.description' />
-					<FormattedMessage
-						id='page.home.title'
-						values={{ b: (chunks) => <b>{chunks}</b> }}
-					/>
-					<FormattedMessage
-						id='page.home.title'
-						values={{ b: (chunks) => <b>{chunks}</b> }}
-					/> */}
-
-					<div className='w-36'>
+					<div className='w-36 flex-col'>
 						<Link href='/'>
 							<Logo ref={logoRef} className='logo' />{' '}
-							{/* <Image
-								src='/vercel.svg'
-								alt='Vercel Logo'
-								className={styles.vercelLogo}
-								width={100}
-								height={24}
-								priority
-							/> */}
 						</Link>
+						<LanguageSelector />
 					</div>
 				</div>
 				<FadeInSection>
@@ -130,7 +109,7 @@ export default function Home() {
 				<Testimonials />
 				{/* <Punch /> */}
 				<FadeInSection>
-					<ContactForm />
+					<ContactForm />{' '}
 				</FadeInSection>
 
 				<Footer />

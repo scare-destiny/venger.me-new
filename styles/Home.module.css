@@ -11,7 +11,7 @@
 .description {
   display: inherit;
   justify-content: inherit;
-  align-items: inherit;
+  align-items: flex-start;
   font-size: 0.85rem;
   max-width: var(--max-width);
   width: 100%;
@@ -237,6 +237,7 @@
   }
 
   .description div {
+    display: none;
     align-items: flex-end;
     pointer-events: none;
     inset: auto 0 0;
