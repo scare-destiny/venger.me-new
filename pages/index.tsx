@@ -89,7 +89,7 @@ export default function Home() {
 					<p className='text-center font-sans '>
 						Elevate Your Business with Cutting-Edge Marketing & Development Solutions
 					</p>
-					<div className='w-36 flex-col'>
+					<div className='w-32 md:w-48 flex-col'>
 						<Link href='/'>
 							<Logo ref={logoRef} className='logo' />{' '}
 						</Link>
