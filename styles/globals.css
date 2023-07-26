@@ -121,6 +121,9 @@ a {
 	-webkit-text-fill-color: transparent;
 }
 
+
+
+
 .typewriter-effect {
   overflow: hidden; /* Ensures the content is not revealed until the animation */
   border-right: .15em solid var(--pink10); /* The typwriter cursor */
@@ -140,6 +143,21 @@ a {
 @keyframes blink-caret {
   0%, 100% { border-color: transparent }
   50% { border-color: var(--pink10); }
+}
+
+@keyframes glow {
+  0% {
+    text-shadow: 0 0 5px var(--blue10), 0 0 10px var(--pink10), 0 0 15px var(--green10), 0 0 20px var(--yellow10), 0 0 25px var(--orange10), 0 0 30px var(--red10);
+  }
+  100% {
+    text-shadow: 0 0 10px var(--blue10), 0 0 20px var(--pink10), 0 0 30px var(--green10), 0 0 40px var(--yellow10), 0 0 50px var(--orange10), 0 0 60px var(--red10);
+  }
+}
+
+.glowing-text {
+  /* animation: glow 2s ease-in-out infinite; */
+  /* text-shadow: 0 0 5px var(--blue10), 0 0 10px var(--pink10), 0 0 15px var(--green10), 0 0 20px var(--yellow10), 0 0 25px var(--orange10), 0 0 30px var(--red10); */
+  text-shadow: 0 0 10px var(--blue10), 0 0 20px var(--pink10), 0 0 30px var(--green10), 0 0 40px var(--yellow10), 0 0 50px var(--orange10), 0 0 60px var(--red10);
 }
 
 

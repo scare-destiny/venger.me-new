@@ -26,6 +26,8 @@ module.exports = {
 			}),
 			boxShadow: {
 				'testimonial-hover': '0 12px 24px rgba(0, 0, 0, 0.1)',
+				'glow':
+					'0 0 10px #ffc600, 0 0 20px #ffc600, 0 0 30px #ffc600, 0 0 40px #ffc600',
 			},
 			scale: {
 				99: '.99',

@@ -13,7 +13,7 @@ const Footer = () => {
 					<li className='flex flex-col items-center transition-all duration-300 ease-in-out transform hover:scale-105'>
 						<a
 							href='mailto:eugene@venger.me'
-							className='text-gray-700 transition hover:text-gray-700/75'
+							className='text-gray-700 transition-transform ease-in-out duration-300 transform hover:skew-y-3'
 						>
 							<SiMinutemailer size={24} aria-label='Email Icon' className='m-auto' />
 							<span className='mt-2 text-xs text-gray-500'>Mail me, maybe?</span>
@@ -22,14 +22,14 @@ const Footer = () => {
 					<li className='flex flex-col items-center transition-all duration-300 ease-in-out transform hover:scale-105'>
 						<a
 							href='tel:+380984693321'
-							className='text-gray-700 transition hover:text-gray-700/75'
+							className='text-gray-700 transition-transform ease-in-out duration-300 transform hover:skew-y-3'
 						>
 							<BsTelephoneInboundFill
 								size={24}
 								aria-label='Phone Icon'
 								className='m-auto'
 							/>
-							<span className='mt-2 text-xs text-gray-500'>Gimme a ring</span>
+							<span className='mt-2 text-xs text-gray-500'>Gimme a call</span>
 						</a>
 					</li>
 				</ul>
@@ -122,7 +122,7 @@ const Footer = () => {
 						</a>
 					</li>
 				</ul>
-				<div className=' flex justify-center py-8'>
+				<div className=' flex justify-center py-8 glowing-text'>
 					<p className='text-white align-center'>
 						&copy; {new Date().getFullYear()} Eugene Venger
 					</p>
