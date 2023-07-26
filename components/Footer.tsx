@@ -1,3 +1,6 @@
+import { BsTelephoneInboundFill } from 'react-icons/bs'
+import { SiMinutemailer } from 'react-icons/si'
+
 const Footer = () => {
 	return (
 		<footer aria-label='Site Footer'>
@@ -6,43 +9,36 @@ const Footer = () => {
 					<div className='w-24 md:hidden'></div>
 				</div>
 
+				<ul className='mt-12 flex justify-center gap-6 md:gap-8'>
+					<li className='flex flex-col items-center transition-all duration-300 ease-in-out transform hover:scale-105'>
+						<a
+							href='mailto:eugene@venger.me'
+							className='text-gray-700 transition hover:text-gray-700/75'
+						>
+							<SiMinutemailer size={24} aria-label='Email Icon' className='m-auto' />
+							<span className='mt-2 text-xs text-gray-500'>Mail me, maybe?</span>
+						</a>
+					</li>
+					<li className='flex flex-col items-center transition-all duration-300 ease-in-out transform hover:scale-105'>
+						<a
+							href='tel:+380984693321'
+							className='text-gray-700 transition hover:text-gray-700/75'
+						>
+							<BsTelephoneInboundFill
+								size={24}
+								aria-label='Phone Icon'
+								className='m-auto'
+							/>
+							<span className='mt-2 text-xs text-gray-500'>Gimme a ring</span>
+						</a>
+					</li>
+				</ul>
+
 				<p className='mx-auto mt-6 max-w-md text-center font-serif  leading-relaxed text-white '>
 					As a growth marketer turned software developer, I specialize in helping
 					businesses reach new heights by combining automation, software development,
 					and marketing expertise.
 				</p>
-
-				{/* <nav aria-label='Footer Nav' className='mt-12 font-bold'>
-					<ul className='flex flex-wrap justify-center gap-6 md:gap-8 lg:gap-12'>
-						<li>
-							<NextLink
-								className='text-gray-700 transition hover:text-gray-700/75'
-								href='/'
-							>
-								Home
-							</NextLink>
-						</li>
-
-						<li>
-							<NextLink
-								className='text-gray-700 transition hover:text-gray-700/75'
-								href='/datenschutz'
-							>
-								Datenschutz
-							</NextLink>
-						</li>
-
-						<li>
-							<NextLink
-								className='text-gray-700 transition hover:text-gray-700/75'
-								href='/impressum'
-							>
-								Impressum
-							</NextLink>
-						</li>
-					</ul>
-				</nav> */}
-
 				<ul className='mt-12 flex justify-center gap-6 md:gap-8 '>
 					<li>
 						<a
@@ -126,6 +122,11 @@ const Footer = () => {
 						</a>
 					</li>
 				</ul>
+				<div className=' flex justify-center py-8'>
+					<p className='text-white align-center'>
+						&copy; {new Date().getFullYear()} Eugene Venger
+					</p>
+				</div>
 			</div>
 		</footer>
 	)

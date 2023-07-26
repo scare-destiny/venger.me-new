@@ -8,5 +8,9 @@
   "page.home.info": "I specialize in helping businesses reach new heights by combining automation, software development, and marketing expertise. All my work includes:",
   "page.home.feature1": "Cutting-edge Software Development",
   "page.home.feature2": "Efficient Automation Solutions",
-  "page.home.feature3": "Best Practices"
+  "page.home.feature3": "Best Practices",
+  "projects.title": "My Projects",
+  "projects.description": "Here are some of the projects I've worked on, both commercial and personal. You can switch between them using the buttons below.",
+  "projects.commercial.title": "Commercial Projects",
+  "projects.personal.title": "Personal Projects"
 }
