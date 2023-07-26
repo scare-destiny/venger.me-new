@@ -45,6 +45,7 @@ export default function FadeInSection({
 				x: isVisible ? endAnim.x : startAnim.x,
 				y: isVisible ? endAnim.y : startAnim.y,
 			}}
+			// @ts-ignore
 			duration={500}
 		>
 			{({ opacity, x, y }) => (
