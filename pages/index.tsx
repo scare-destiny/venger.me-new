@@ -96,24 +96,18 @@ export default function Home() {
 						<LanguageSelector />
 					</div>
 				</div>
-				<FadeInSection>
+				<FadeInSection direction='down'>
 					<Hero />
 				</FadeInSection>
-				<FadeInSection>
-					<Features />
-				</FadeInSection>
+				<Features />
 				{/* <FadeInSection>
 					<Services />
 				</FadeInSection> */}
 				<Projects />
 				<Testimonials />
 				{/* <Punch /> */}
-				<FadeInSection>
-					<ContactForm />{' '}
-				</FadeInSection>
-
+				<ContactForm />
 				<Footer />
-
 				{/* <div className={styles.center}>
 					<Image
 						className={styles.logo}

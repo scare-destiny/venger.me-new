@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { projects, personalProjects } from '@/data/projects'
 import ProjectCard from './ProjectCard'
+import FadeInSection from '.././FadeInSection'
 
 interface Project {
 	id: number
@@ -59,18 +60,20 @@ const Projects: React.FC = () => {
 				</blockquote>
 				<div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8'>
 					{projectData.map((project: Project) => (
-						<div key={project.id} className='flex flex-col'>
-							<div className='relative group flex-grow'>
-								<ProjectCard
-									id={project.id}
-									title={project.title}
-									description={project.description}
-									results={project.results}
-									svg={project.svg}
-									link={project.link}
-								/>
+						<FadeInSection key={project.id} direction='up' threshold={0.5}>
+							<div className='flex flex-col'>
+								<div className='relative group flex-grow'>
+									<ProjectCard
+										id={project.id}
+										title={project.title}
+										description={project.description}
+										results={project.results}
+										svg={project.svg}
+										link={project.link}
+									/>
+								</div>
 							</div>
-						</div>
+						</FadeInSection>
 					))}
 				</div>
 			</div>
