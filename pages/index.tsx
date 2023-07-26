@@ -87,7 +87,7 @@ export default function Home() {
 			<main className={styles.main}>
 				<div className={styles.description}>
 					<p className='text-center font-sans '>
-						Elevate Your Business with Cutting-Edge Marketing & Development Solutions
+						Elevate Your Business with Cutting-Edge Software Development Solutions
 					</p>
 					<div className='w-32 md:w-48 flex-col'>
 						<Link href='/'>
