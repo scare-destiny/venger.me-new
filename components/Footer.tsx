@@ -122,8 +122,8 @@ const Footer = () => {
 						</a>
 					</li>
 				</ul>
-				<div className=' flex justify-center py-8 glowing-text'>
-					<p className='text-white align-center'>
+				<div className=' flex justify-center py-8 '>
+					<p className='text-white align-center rainbow'>
 						&copy; {new Date().getFullYear()} Eugene Venger
 					</p>
 				</div>
