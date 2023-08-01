@@ -11,6 +11,8 @@ import {
 import Image from 'next/image'
 import image from '../public/Eugene-Venger.jpeg'
 
+
+
 interface FeatureProps {
 	text: string
 	IconComponent: IconType

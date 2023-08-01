@@ -15,6 +15,7 @@ import {
 	ContactForm,
 	Projects,
 	LanguageSelector,
+	Expertise,
 	Punch,
 } from '@/components'
 
@@ -100,6 +101,9 @@ export default function Home() {
 					<Hero />
 				</FadeInSection>
 				<Features />
+				<FadeInSection direction='down'>
+					<Expertise />
+				</FadeInSection>
 				{/* <FadeInSection>
 					<Services />
 				</FadeInSection> */}
