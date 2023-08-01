@@ -13,18 +13,18 @@ interface Project {
 }
 
 const Projects: React.FC = () => {
-	const [quote, setQuote] = useState<string>('')
+	// const [quote, setQuote] = useState<string>('')
 	const [projectData, setProjectData] = useState(projects)
 
-	useEffect(() => {
-		const fetchData = async () => {
-			const quoteResponse = await fetch('https://api.quotable.io/random')
-			const quoteData = await quoteResponse.json()
-			setQuote(quoteData.content)
-		}
+	// useEffect(() => {
+	// 	const fetchData = async () => {
+	// 		const quoteResponse = await fetch('https://api.quotable.io/random')
+	// 		const quoteData = await quoteResponse.json()
+	// 		setQuote(quoteData.content)
+	// 	}
 
-		fetchData()
-	}, [])
+	// 	fetchData()
+	// }, [])
 
 	return (
 		<section className='py-16'>
@@ -47,7 +47,7 @@ const Projects: React.FC = () => {
 						Personal Projects
 					</button>
 				</div>
-				<blockquote className='text-xl text-center italic mb-6 text-gray-300 relative'>
+				{/* <blockquote className='text-xl text-center italic mb-6 text-gray-300 relative'>
 					{quote}
 					<span className='group relative inline-block'>
 						<span className='ml-2 text-yellow-400 cursor-pointer'>
@@ -57,7 +57,7 @@ const Projects: React.FC = () => {
 							</span>
 						</span>
 					</span>
-				</blockquote>
+				</blockquote> */}
 				<div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8'>
 					{projectData.map((project: Project) => (
 						<FadeInSection key={project.id} direction='up' threshold={0.5}>

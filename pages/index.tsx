@@ -93,7 +93,7 @@ export default function Home() {
 						<Link href='/'>
 							<Logo ref={logoRef} className='logo' />{' '}
 						</Link>
-						<LanguageSelector />
+						{/* <LanguageSelector /> */}
 					</div>
 				</div>
 				<FadeInSection direction='down'>
