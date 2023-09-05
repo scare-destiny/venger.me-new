@@ -44,6 +44,9 @@ module.exports = {
 				'card': 'rgb(var(--card-rgb))',
 				'card-border': 'rgb(var(--card-border-rgb))',
 			},
+			animation: {
+				pulse: 'pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+			},
 		},
 	},
 	variants: {

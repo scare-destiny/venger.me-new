@@ -12,8 +12,8 @@ const skills = [
 
 const Expertise = () => {
 	return (
-		<section className='pt-16 max-w-2xl'>
-			<h2 className='font-semibold text-4xl mb-4'>Skills</h2>
+		<section className='pt-16 max-w-2xl text-center'>
+			<h2 className='font-semibold text-4xl mb-4 '>Skills</h2>
 			<p className=' max-w-lg'>
 				Here&apos;s some of the technologies I&apos;ve been working with, listed in
 				no particular order.

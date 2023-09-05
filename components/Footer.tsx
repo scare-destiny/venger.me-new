@@ -1,5 +1,6 @@
 import { BsTelephoneInboundFill } from 'react-icons/bs'
 import { SiMinutemailer } from 'react-icons/si'
+import { AiOutlineGlobal } from 'react-icons/ai' // Let's get a globe icon
 
 const Footer = () => {
 	return (
@@ -121,7 +122,18 @@ const Footer = () => {
 							</svg>
 						</a>
 					</li>
+					<li className='flex flex-col items-center transition-all duration-300 ease-in-out transform hover:scale-105'>
+						<a
+							href='https://agency.venger.me'
+							target='_blank'
+							rel='noopener noreferrer'
+							className='text-gray-700 transition-transform ease-in-out duration-300 transform hover:skew-y-3 animate-pulse '
+						>
+							<AiOutlineGlobal size={24} aria-label='Globe Icon' className='m-auto' />
+						</a>
+					</li>
 				</ul>
+
 				<div className=' flex justify-center py-8 '>
 					<p className='text-white align-center rainbow'>
 						&copy; {new Date().getFullYear()} Eugene Venger
