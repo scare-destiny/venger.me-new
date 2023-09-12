@@ -1,5 +1,5 @@
 import { useState } from 'react'
-
+import CheckSpf from './CheckSpf'
 interface Results {
 	spf: string
 	dmarc: string
@@ -42,29 +42,32 @@ const CheckRecordsForm = () => {
 	}
 
 	return (
-		<div className='container'>
-			<input
-				type='text'
-				placeholder='Domain'
-				value={domain}
-				onChange={(e) => setDomain(e.target.value)}
-			/>
-			<input
-				type='text'
-				placeholder='Selector'
-				value={selector}
-				onChange={(e) => setSelector(e.target.value)}
-			/>
-			<button onClick={checkRecords}>Check Records</button>
+		<>
+			{/* <div className='container'>
+				<input
+					type='text'
+					placeholder='Domain'
+					value={domain}
+					onChange={(e) => setDomain(e.target.value)}
+				/>
+				<input
+					type='text'
+					placeholder='Selector'
+					value={selector}
+					onChange={(e) => setSelector(e.target.value)}
+				/>
+				<button onClick={checkRecords}>Check Records</button>
 
-			{results && (
-				<div>
-					<p>SPF: {results.spf}</p>
-					<p>DMARC: {results.dmarc}</p>
-					<p>DKIM: {results.dkim}</p>
-				</div>
-			)}
-		</div>
+				{results && (
+					<div>
+						<p>SPF: {results.spf}</p>
+						<p>DMARC: {results.dmarc}</p>
+						<p>DKIM: {results.dkim}</p>
+					</div>
+				)}
+			</div> */}
+			<CheckSpf />
+		</>
 	)
 }
 
