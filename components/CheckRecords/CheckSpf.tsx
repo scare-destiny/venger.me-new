@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import { useMutation } from 'react-query'
+import { PacmanLoader } from 'react-spinners'
 
 const checkSpf = async (domain: string) => {
 	const res = await fetch('/api/checkSpf', {
@@ -50,11 +51,15 @@ export default function CheckSpf() {
 				</button>
 			</div>
 
+			{(mutation.isLoading || checkDomainAge.isLoading) && (
+				<div className='m-4'>
+					<PacmanLoader color='#ec4899' size={20} />
+				</div>
+			)}
+
 			<div className='mt-4'>
 				{checkDomainAge.isSuccess && (
-					<p className='text-green-600'>
-						Domain Age: {checkDomainAge.data.ageInDays} days 🎉
-					</p>
+					<p>Domain Age: {checkDomainAge.data.ageInDays} days 🎉</p>
 				)}
 
 				{mutation.isError ? (
