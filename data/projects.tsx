@@ -11,6 +11,17 @@ export const projects = [
 		link: 'https://westernsattel-landing-git-main-jvg-landing-pages.vercel.app/',
 	},
 	{
+		id: 6,
+		title: 'Slack Bot for Email Deliverability Audits',
+		description:
+			'Built a Slack bot to streamline email deliverability audits for potential agency clients, checking SPF, DKIM, and DMARC records.',
+		results: 'Reduced audit time from minutes to seconds',
+		svg: `<svg width="70" height="70" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M7 22H17L23 12L17 2H7L1 12L7 22Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>`,
+		link: 'https://venger.me/email-records',
+	},
+	{
 		id: 2,
 		title: 'Attribution Platform',
 		description:
@@ -20,6 +31,7 @@ export const projects = [
 <path d="M3 12L12 3L21 12L12 21L3 12Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
 </svg>`,
 	},
+
 	{
 		id: 3,
 		title: 'Ecommerce Tracking',
@@ -47,16 +59,6 @@ export const projects = [
 		results: 'Improved conversion rates and customer engagement',
 		svg: `<svg width="70" height="70" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M21 10.5H3M5.5 3L3 10.5L5.5 18M18.5 3L21 10.5L18.5 18" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-</svg>`,
-	},
-	{
-		id: 6,
-		title: 'Slack Bot for Email Deliverability Audits',
-		description:
-			'Built a Slack bot to streamline email deliverability audits for potential agency clients, checking SPF, DKIM, and DMARC records.',
-		results: 'Reduced audit time from minutes to seconds',
-		svg: `<svg width="70" height="70" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M7 22H17L23 12L17 2H7L1 12L7 22Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
 </svg>`,
 	},
 ]
