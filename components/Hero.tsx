@@ -13,7 +13,7 @@ export default function Hero() {
 				<h1 className='typewriter-effect max-w-fit md:leading-tight lg:leading-snug font-serif font-bold break-words text-3xl sm:text-5xl md:text-6xl lg:text-8xl mb-4 md:mb-2'>
 					<span className={styles.rainbow}>Venger.me</span>
 				</h1>
-				<h1 className='font-serif font-bold break-words text-3xl sm:text-5xl md:text-6xl md:text-center lg:text-8xl mb-4 md:mb-2'>
+				<h1 className='font-serif font-bold break-words text-3xl sm:text-5xl md:text-6xl md:text-center lg:text-6xl mb-4 md:mb-2'>
 					{title}
 				</h1>
 				<div className='flex flex-col items-start pt-4 md:pt-2 max-w-full md:max-w-full '>

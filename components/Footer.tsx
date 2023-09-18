@@ -14,31 +14,31 @@ const Footer = () => {
 					<li className='flex flex-col items-center transition-all duration-300 ease-in-out transform hover:scale-105'>
 						<a
 							href='mailto:eugene@venger.me'
-							className='text-gray-700 transition-transform ease-in-out duration-300 transform hover:skew-y-3'
+							className='text-gray-500 transition-transform ease-in-out duration-300 transform hover:skew-y-3'
 						>
 							<SiMinutemailer size={24} aria-label='Email Icon' className='m-auto' />
-							<span className='mt-2 text-xs text-gray-500'>Mail me, maybe?</span>
+							<span className='mt-2 text-xs text-gray-300'>Mail me, maybe?</span>
 						</a>
 					</li>
-					<li className='flex flex-col items-center transition-all duration-300 ease-in-out transform hover:scale-105'>
+					{/* <li className='flex flex-col items-center transition-all duration-300 ease-in-out transform hover:scale-105'>
 						<a
 							href='tel:+380984693321'
-							className='text-gray-700 transition-transform ease-in-out duration-300 transform hover:skew-y-3'
+							className='text-gray-500 transition-transform ease-in-out duration-300 transform hover:skew-y-3'
 						>
 							<BsTelephoneInboundFill
 								size={24}
 								aria-label='Phone Icon'
 								className='m-auto'
 							/>
-							<span className='mt-2 text-xs text-gray-500'>Gimme a call</span>
+							<span className='mt-2 text-xs text-gray-300'>Gimme a call</span>
 						</a>
-					</li>
+					</li> */}
 				</ul>
 
 				<p className='mx-auto mt-6 max-w-md text-center font-serif  leading-relaxed text-white '>
-					As a growth marketer turned software developer, I specialize in helping
-					businesses reach new heights by combining automation, software development,
-					and marketing expertise.
+					As a growth marketer with a dual skill set in software development, I excel
+					at automating your marketing engines and building high-impact software
+					solutions that take your business to the next level.
 				</p>
 				<ul className='mt-12 flex justify-center gap-6 md:gap-8 '>
 					<li>
@@ -46,7 +46,7 @@ const Footer = () => {
 							href='https://www.facebook.com/eugene.venger/'
 							rel='noreferrer'
 							target='_blank'
-							className='text-gray-700 transition hover:text-gray-700/75'
+							className='text-gray-500 transition hover:text-gray-500/75'
 						>
 							<span className='sr-only'>Facebook</span>
 							<svg
@@ -69,7 +69,7 @@ const Footer = () => {
 							href='https://www.instagram.com/eugene.venger/'
 							rel='noreferrer'
 							target='_blank'
-							className='text-gray-700 transition hover:text-gray-700/75'
+							className='text-gray-500 transition hover:text-gray-500/75'
 						>
 							<span className='sr-only'>Instagram</span>
 							<svg
@@ -91,7 +91,7 @@ const Footer = () => {
 							href='https://www.linkedin.com/in/eugenevenger/'
 							rel='noreferrer'
 							target='_blank'
-							className='text-gray-700 transition hover:text-gray-700/75'
+							className='text-gray-500 transition hover:text-gray-500/75'
 						>
 							<span className='sr-only'>Linkedin</span>
 							<svg
@@ -109,7 +109,7 @@ const Footer = () => {
 							href='https://github.com/scare-destiny/'
 							rel='noreferrer'
 							target='_blank'
-							className='text-gray-700 transition hover:text-gray-700/75'
+							className='text-gray-500 transition hover:text-gray-500/75'
 						>
 							<span className='sr-only'>Github</span>
 							<svg
@@ -127,7 +127,7 @@ const Footer = () => {
 							href='https://agency.venger.me'
 							target='_blank'
 							rel='noopener noreferrer'
-							className='text-gray-700 transition-transform ease-in-out duration-300 transform hover:skew-y-3 animate-pulse '
+							className='text-gray-500 transition-transform ease-in-out duration-300 transform hover:skew-y-3 animate-pulse '
 						>
 							<AiOutlineGlobal size={24} aria-label='Globe Icon' className='m-auto' />
 						</a>
