@@ -97,9 +97,9 @@ export default function Home() {
 						{/* <LanguageSelector /> */}
 					</div>
 				</div>
-				<FadeInSection direction='down'>
-					<Hero />
-				</FadeInSection>
+				{/* <FadeInSection direction='down'> */}
+				<Hero />
+				{/* </FadeInSection> */}
 				<Features />
 				<FadeInSection direction='down'>
 					<Expertise />
