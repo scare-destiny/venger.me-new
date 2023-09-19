@@ -33,9 +33,11 @@ export default function ContactForm() {
 					'Content-Type': 'application/json',
 				},
 			})
-
+			const data = await response.json()
+			console.log('Server Response:', data)
 			response.ok ? notifySuccess() : notifyError()
 		} catch (error) {
+			console.log('Error caught:', error) // New Line
 			notifyError()
 		}
 
