@@ -1,6 +1,6 @@
 import { useRef } from 'react'
 import { Animate } from 'react-move'
-import { useIntersectionObserver } from '.'
+import { useIntersectionObserver } from '..'
 
 interface FadeInSectionProps {
 	children: React.ReactNode

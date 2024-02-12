@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { projects, personalProjects } from '@/data/projects'
 import ProjectCard from './ProjectCard'
-import FadeInSection from '.././FadeInSection'
+import FadeInSection from '../Animation/FadeInSection'
 
 interface Project {
 	id: number

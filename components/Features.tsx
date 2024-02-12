@@ -1,5 +1,5 @@
 import { FC, useEffect, useState } from 'react'
-import FadeInSection from './FadeInSection'
+import FadeInSection from './Animation/FadeInSection'
 import { useIntl } from 'react-intl'
 import { IconType } from 'react-icons'
 import {
@@ -10,8 +10,6 @@ import {
 } from 'react-icons/io5'
 import Image from 'next/image'
 import image from '../public/Eugene-Venger.jpeg'
-
-
 
 interface FeatureProps {
 	text: string
